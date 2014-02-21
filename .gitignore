@@ -1,0 +1,10 @@
+*.elc
+el-git
+auto-save-list
+.places
+tramp
+elpa
+swank
+emms
+el-get
+.yas-compiled-snippets.el

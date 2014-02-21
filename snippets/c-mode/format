@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: attribute format
+# key: format
+# --
+__attribute__((format(${1:printf}, ${2:1}, ${2:$(1+ (string-to-number yas-text))})))$0

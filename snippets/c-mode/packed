@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: attribute packed
+# key: packed
+# --
+__attribute__((__packed__))$0
