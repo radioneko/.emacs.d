@@ -34,6 +34,7 @@
     (add-to-list 'load-path project)))
 
 (require 'appearance)
+(require 'key-bindings)
 
 (require 'cl)
 

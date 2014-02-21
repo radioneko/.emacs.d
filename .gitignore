@@ -7,4 +7,6 @@ elpa
 swank
 emms
 el-get
+.mc-lists
+ac-comphist.dat
 .yas-compiled-snippets.el
