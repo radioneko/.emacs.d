@@ -83,6 +83,7 @@
    expand-region	; expand region
    ace-jump-mode	; fast navigation
    dash			; modern iterators
+   etags-table		; for ido tag completion
 ))
 
 (setq my:el-get-packages
@@ -118,6 +119,7 @@
 (require 'ace-jump-mode)
 (require 'undo-tree)
 (require 'ido)
+(require 'etags-table)
 
 (require 'window-numbering)
 (window-numbering-mode 1)
@@ -142,3 +144,14 @@
   (align-regexp start end "\\(\\s-+\\)\\/[*/]" 1 1 nil))
 
 (global-set-key (kbd "C-c a") 'my-align-region)
+
+;; trying new things
+(defun my-ido-find-tag ()
+  "Find a tag using ido"
+  (interactive)
+  (tags-completion-table)
+  (let (tag-names)
+    (mapatoms (lambda (x)
+                (push (prin1-to-string x t) tag-names))
+              tags-completion-table)
+    (find-tag (ido-completing-read "Tag: " tag-names))))
