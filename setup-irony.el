@@ -3,6 +3,9 @@
 (when (file-exists-p "/usr/lib/clang/3.3/include/")
   (setq irony-libclang-additional-flags
         '("-isystem" "/usr/lib/clang/3.3/include/")))
+(when (file-exists-p "/usr/lib/clang/3.4/include/")
+  (setq irony-libclang-additional-flags
+        '("-isystem" "/usr/lib/clang/3.4/include/")))
 (irony-enable 'ac)
 
 ; hack to substitute :value parameter to popup-make-item with string

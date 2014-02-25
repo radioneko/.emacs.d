@@ -4,7 +4,7 @@
 (add-hook 'emacs-lisp-mode-hook
           (lambda ()
             (setq show-trailing-whitespace t)
-            (folding-mode 1)
+;            (folding-mode 1)
 	    (auto-complete-mode 1)
 	    (define-key emacs-lisp-mode-map
 	      "\C-x\C-e" 'pp-eval-last-sexp)
