@@ -84,6 +84,7 @@
    ace-jump-mode	; fast navigation
    dash			; modern iterators
    etags-table		; for ido tag completion
+   evil			; to make emacs behave sexy
 ))
 
 (setq my:el-get-packages
@@ -120,6 +121,7 @@
 (require 'undo-tree)
 (require 'ido)
 (require 'etags-table)
+(require 'evil)
 
 (require 'window-numbering)
 (window-numbering-mode 1)
