@@ -86,6 +86,7 @@
    etags-table		; for ido tag completion
    evil			; to make emacs behave sexy
    goto-last-change	; for "'." in evil mode
+   help-fns+		; for describe-keymap (C-h M-k)
 ))
 
 (setq my:el-get-packages
@@ -123,6 +124,7 @@
 (require 'ido)
 (require 'etags-table)
 (require 'evil)
+(require 'help-fns+)
 
 (require 'window-numbering)
 (window-numbering-mode 1)
