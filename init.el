@@ -87,6 +87,7 @@
    evil			; to make emacs behave sexy
    goto-last-change	; for "'." in evil mode
    help-fns+		; for describe-keymap (C-h M-k)
+   evil-leader		; ftw
 ))
 
 (setq my:el-get-packages
