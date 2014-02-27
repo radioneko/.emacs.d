@@ -2,6 +2,11 @@
 (require 'goto-last-change)
 (require 'evil-leader)
 
+(setq evil-insert-state-cursor '("red" box)
+      evil-normal-state-cursor '("white" box)
+      evil-visual-state-cursor '("green" box))
+
+
 (define-key evil-normal-state-map [insert] 'evil-insert)
 (define-key evil-insert-state-map [C-return] 'yas/expand)
 ;; ace-jump
