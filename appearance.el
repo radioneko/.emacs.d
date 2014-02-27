@@ -5,7 +5,7 @@
 (show-paren-mode 1)
 
 ;; Set default font face
-(set-frame-font "Droid Sans Mono-11" nil t)
+(set-frame-font "Droid Sans Mono-10" nil t)
 
 ;; Set custom theme path
 (setq custom-theme-directory (concat user-emacs-directory "themes"))
