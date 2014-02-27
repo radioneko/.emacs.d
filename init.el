@@ -85,6 +85,7 @@
    dash			; modern iterators
    etags-table		; for ido tag completion
    evil			; to make emacs behave sexy
+   goto-last-change	; for "'." in evil mode
 ))
 
 (setq my:el-get-packages

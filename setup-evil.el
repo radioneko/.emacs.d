@@ -1,4 +1,5 @@
 (require 'evil)
+(require 'goto-last-change)
 
 (define-key evil-normal-state-map [insert] 'evil-insert)
 (define-key evil-insert-state-map [C-return] 'yas/expand)
