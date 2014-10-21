@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: newconst
+# key: const
+# --
+\newcommand*{\\${1:$(latex-const-name yas-text)}}{\mbox{\texttt{${1:$(latex-const-value yas-text)}}}} % ${1:name} = $0

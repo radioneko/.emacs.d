@@ -27,4 +27,10 @@
     (replace-regexp-in-string "[[:space:]]+" ""
 			      (yas-substr decl "[0-9A-Za-z_]+[[:space:]]*$"))))
 
+(defun latex-const-name (text)
+  (replace-regexp-in-string "_" "" text))
+
+(defun latex-const-value (text)
+  (replace-regexp-in-string "_" "\\\\_" text))
+
 (provide 'setup-yasnippet)
